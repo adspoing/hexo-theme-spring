@@ -32,7 +32,8 @@ body
 
 .outer
   clearfix()
-  max-width: (column-width + gutter-width) * columns + gutter-width
+  max-width: 800px;
+  min-width:600px
   margin: 0 auto
   padding: 0 gutter-width
 
@@ -66,15 +67,8 @@ body
   .mobile-nav-on &
     left: mobile-nav-width
 
-if sidebar and sidebar isnt bottom
-  #main
-    @media mq-normal
-      column(main-column)
 
-if sidebar is left
-  @media mq-normal
-    #main
-      float: right
+
 
 @import "_extend"
 @import "_partial/header"
@@ -83,7 +77,5 @@ if sidebar is left
 @import "_partial/archive"
 @import "_partial/footer"
 @import "_partial/highlight"
-@import "_partial/mobile"
+@import "_partial/head-nav"
 
-if sidebar
-  @import "_partial/sidebar"

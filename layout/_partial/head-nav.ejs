@@ -1,0 +1,14 @@
+<header id="head-nav">
+
+    <a href="/">
+            <img id="nav-avatar" src="<%=theme.avatar%>">
+    </a>
+    <p>
+        <a href="<%- url_for() %>" id="nav-title"><%= config.title %></a>
+    </p>
+    <ul id="main-nav">
+        <% for (var i in theme.menu){ %>
+        <li><a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+        <% } %>
+    </ul>
+</header>

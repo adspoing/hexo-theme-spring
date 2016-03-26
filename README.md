@@ -1,27 +1,27 @@
-# Landscape
+# Spring
 
-A brand new default theme for [Hexo].
+A theme for [Hexo].
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+- [Preview](http://www.springwon.cn)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
+$ git clone https://github.com/adspoing/hexo-theme-spring.git themes/spring
 ```
 
-**Landscape requires Hexo 2.4 and above.**
+**Spring requires Hexo 2.4 and above.**
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `landscape`.
+Modify `theme` setting in `_config.yml` to `spring`.
 
 ### Update
 
 ``` bash
-cd themes/landscape
+cd themes/spring
 git pull
 ```
 
@@ -30,9 +30,13 @@ git pull
 ``` yml
 # Header
 menu:
-  Home: /
-  Archives: /archives
-rss: /atom.xml
+  主页: /
+  所有文章: /archives
+  随笔: /tags/随笔
+social:
+  zhihu: 
+  facebook: 
+  github: 
 
 # Content
 excerpt_link: Read More
@@ -52,10 +56,12 @@ google_analytics:
 favicon: /favicon.png
 twitter:
 google_plus:
+
+#Personal
+avatar: 
 ```
 
 - **menu** - Navigation menu
-- **rss** - RSS link
 - **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
 - **fancybox** - Enable [Fancybox]
 - **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
@@ -64,6 +70,7 @@ google_plus:
 - **favicon** - Favicon path
 - **twitter** - Twiiter ID
 - **google_plus** - Google+ ID
+
 
 ## Features
 
